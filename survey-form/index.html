@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey  Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">A survey of the popularity of fantasy novels</p>
+    <form id="survey-form">
+      <fieldset id="1">
+        <label id="name-label">Name <input type="text" name="name" required placeholder="Enter your name" id="name" /></label> 
+        <label id="email-label">Email <input type="email" name="email" required placeholder="Enter your email" id="email"/></label>   
+        <label id="number-label">Age (optional) <input type="number" name="age" min="10" max="120" required id="number" placeholder="18"/></label>
+      </fieldset>
+      <fieldset>
+        <p id="like">Do you like fantasy novels?<p>
+        <label for="yes">Yes<input type="radio" name="like" id="yes" value="yes"></label>
+        <label for="no">No <input type="radio" name="like" id="no" value="no"></label>
+        <label for="not-yet">I haven't read one yet<input type="radio" name="like" id="not-yet" value="not-yet"></label>
+      </fieldset>
+      <fieldset>
+        <label>Where did you first encounter the genre of fantasy?     
+          <select name="where" id="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">Book</option>
+            <option value="2">Movie</option>
+            <option value="3">Game</option>
+            <option value="4">Other</option>         
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <p id="type">What fantasy genres do you like?</p>
+        <label for="epic"><input type="checkbox" id="epic" name="preference" value="epic"> Epic fantasy</label>
+        <label for="heroic"><input type="checkbox" id="heroic" name="preference" value="heroic"> Heroic/quest fantasy</label>
+        <label for="dark"><input type="checkbox" id="dark" name="preference" value="dark"> Dark fantasy</label>
+        <label for="historical"><input type="checkbox" id="historical" name="preference" value="historical"> Historical fantasy</label>
+        <label for="humorous"><input type="checkbox" id="humorous" name="preference" value="humorous"> Humorous fantasy</label>
+        <label for="urban"><input type="checkbox" id="urban" name="preference" value="urban"> Urban fantasy</label>
+        <label for="science"><input type="checkbox" id="science" name="preference" value="science"> Science fantasy</label>
+        <label for="low"><input type="checkbox" id="low" name="preference" value="low"> Low fantasy</label>
+        <label for="other"><input type="checkbox" id="other" name="preference" value="other"> Other</label>
+
+      </fieldset>
+        <fieldset><br>
+          <label>What other types of fantasy content do you consume besides novels?
+            <select name="containt" id="containt">
+              <option value="">(select one)</option>
+              <option value="1">Movie</option>
+              <option value="2">Video game</option>
+              <option value="3">Role playing game</option>
+              <option value="4">Comic</option>
+              <option value="5">Collecting merchandise</option>
+              <option value="6">Other</option>
+            </select>          
+          </label>
+        </fieldset>
+        <fieldset>
+          <label> What was your most lasting fantasy-related experience?
+            <textarea name="most_lasting" rows="3" cols="30" id="most_lasting"></textarea>
+          </label>
+        </fieldset>
+        <input type="submit" value="Submit" id="submit"/>
+    </form>    
+  </body>
+</html>
